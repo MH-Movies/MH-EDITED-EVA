@@ -10,9 +10,12 @@ class script(object):
 ✯ 𝙳𝙰𝚃𝙰 𝙱𝙰𝚂𝙴: 𝙼𝙾𝙽𝙶𝙾 𝙳𝙱
 ✯ 𝙱𝙾𝚃 𝚂𝙴𝚁𝚅𝙴𝚁: 𝙷𝙴𝚁𝙾𝙺𝚄
 ✯ 𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚃𝚄𝚂: v1.0.1 [ 𝙱𝙴𝚃𝙰 ]"""
-    SOURCE_TXT = """<b>എന്തായാലും ഇടുവരെ വന്ന സ്ഥിതിക്ക് ഇന്ന ഈ BUN 🥯 കയിച്ചിട്ട് പോയമദി 💁</b>"""
+    SOURCE_TXT = """<b>NOTE:</b>
+- Eva Maria is a open source project. 
+- Source - https://github.com/EvamariaTG/EvaMaria  
 
-
+<b>DEVS:</b>
+- <a href=https://t.me/TeamEvamaria>Team Eva Maria</a>"""
     MANUELFILTER_TXT = """Help: <b>Filters</b>
 
 - Filter is the feature were users can set automated replies for a particular keyword and EvaMaria will respond whenever a keyword is found the message
@@ -79,6 +82,7 @@ This module only works for my admins
 <b>Commands and Usage:</b>
 • /logs - <code>to get the rescent errors</code>
 • /stats - <code>to get status of files in db.</code>
+• /delete - <code>to delete a specific file from db.</code>
 • /users - <code>to get list of my users and ids.</code>
 • /chats - <code>to get list of the my chats and ids </code>
 • /leave  - <code>to leave from a chat.</code>
