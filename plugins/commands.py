@@ -17,10 +17,10 @@ async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
         buttons = [
             [
-                InlineKeyboardButton('🤖 Updates', url='https://t.me/TeamEvamaria')
+                InlineKeyboardButton('NEW RELEASE 🍿', url='https://t.me/joinchat/rAWW1iD2NBVhZTc1')
             ],
             [
-                InlineKeyboardButton('ℹ️ Help', url=f"https://t.me/{temp.U_NAME}?start=help"),
+                InlineKeyboardButton('MH Updates 📨', url=f"https://t.me/MoviesHub_Updates"),
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -80,13 +80,17 @@ async def start(client, message):
         return
     if len(message.command) ==2 and message.command[1] in ["subscribe", "error", "okay"]:
         buttons = [[
-            InlineKeyboardButton('Add Me To Your Groups', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-            ],[
-            InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🤖 Updates', url='https://t.me/EvaMariaUpdates')
-            ],[
-            InlineKeyboardButton('ℹ️ Help', callback_data='help'),
-            InlineKeyboardButton('😊 About', callback_data='about')
+        InlineKeyboardButton('🗣️ Group 1', url='https://t.me/Movies_HubGrp'),
+        InlineKeyboardButton('🗣️ Group 2', url='https://t.me/movies_Hubh2'),
+        InlineKeyboardButton('🗣️ Group 3', url='https://t.me/movies_Hub03')
+    ],[
+        InlineKeyboardButton('🗣 OUR MAIN GROUP ', url='https://t.me/movies_Hubh2')
+    ],[
+        InlineKeyboardButton('💺 New Release 🍿', url='https://t.me/+rAWW1iD2NBVhZTc1'),
+        InlineKeyboardButton('👥 MH Channel', url='https://t.me/+B94VHKIvaEFmMWE1')
+    ],[
+        InlineKeyboardButton('📺 Tv-Web Series', url='https://t.me/MH_Series1'),
+        InlineKeyboardButton('MH Updates 📨', url='https://t.me/MoviesHub_Updates')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
