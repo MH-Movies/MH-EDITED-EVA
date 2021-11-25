@@ -41,11 +41,11 @@ async def start(client, message):
     ],[
         InlineKeyboardButton('🗣 OUR MAIN GROUP ', url='https://t.me/movies_Hubh2')
     ],[
-        InlineKeyboardButton('💺 New Release 🍿', url='https://t.me/MoviesHub_Updates'),
-        InlineKeyboardButton('👥 MH Channel', url='https://t.me/MoviesHub_Updates')
+        InlineKeyboardButton('💺 New Release 🍿', url='https://t.me/+rAWW1iD2NBVhZTc1'),
+        InlineKeyboardButton('👥 MH Channel', url='https://t.me/+B94VHKIvaEFmMWE1')
     ],[
         InlineKeyboardButton('📺 Tv-Web Series', url='https://t.me/MH_Series1'),
-        InlineKeyboardButton('MH Updates 📨', url='https://t.me/share/url?url=https://t.me/movies_Hubh2')
+        InlineKeyboardButton('MH Updates 📨', url='https://t.me/MoviesHub_Updates')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
