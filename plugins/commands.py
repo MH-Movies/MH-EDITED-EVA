@@ -35,13 +35,17 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('Add Me To Your Groups', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-            ],[
-            InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🤖 Updates', url='https://t.me/EvaMariaUpdates')
-            ],[
-            InlineKeyboardButton('ℹ️ Help', callback_data='help'),
-            InlineKeyboardButton('😊 About', callback_data='about')
+        InlineKeyboardButton('🗣️ Group 1', url='https://t.me/Movies_HubGrp'),
+        InlineKeyboardButton('🗣️ Group 2', url='https://t.me/movies_Hubh2'),
+        InlineKeyboardButton('🗣️ Group 3', url='https://t.me/movies_Hub03')
+    ],[
+        InlineKeyboardButton('🗣 OUR MAIN GROUP ', url='https://t.me/movies_Hubh2')
+    ],[
+        InlineKeyboardButton('💺 New Release 🍿', url='https://t.me/MoviesHub_Updates'),
+        InlineKeyboardButton('👥 MH Channel', url='https://t.me/MoviesHub_Updates')
+    ],[
+        InlineKeyboardButton('📺 Tv-Web Series', url='https://t.me/MH_Series1'),
+        InlineKeyboardButton('MH Updates 📨', url='https://t.me/share/url?url=https://t.me/movies_Hubh2')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
