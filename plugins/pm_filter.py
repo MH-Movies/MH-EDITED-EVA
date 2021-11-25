@@ -122,16 +122,16 @@ async def next_page(bot, query):
         off_set = offset - 10
     if n_offset == 0:
         btn.append(
-            [InlineKeyboardButton("🔙《 Bᴀᴄᴋ", callback_data=f"next_{req}_{key}_{off_set}"), InlineKeyboardButton(f"📙 Eɴᴅ Pᴀɢᴇ {round(int(offset)/10)+1} / {round(total/10)} 📚️", callback_data="pages")]
+            [InlineKeyboardButton("🔙《 BACK", callback_data=f"next_{req}_{key}_{off_set}"), InlineKeyboardButton(f"🔚 END PAGE {round(int(offset)/10)+1} / {round(total/10)} 🗓", callback_data="pages")]
         )
     elif off_set is None:
-        btn.append([InlineKeyboardButton(f"📖 {round(int(offset)/10)+1} / {round(total/10)} 📚️", callback_data="pages"), InlineKeyboardButton("Lᴀsᴛ Pᴀɢᴇ 〉", callback_data=f"next_{req}_{key}_{n_offset}")])
+        btn.append([InlineKeyboardButton(f"🗓 {round(int(offset)/10)+1} / {round(total/10)} ", callback_data="pages"), InlineKeyboardButton("Last Page ☞", callback_data=f"next_{req}_{key}_{n_offset}")])
     else:
         btn.append(
             [
-                InlineKeyboardButton("〈 Bᴀᴄᴋ", callback_data=f"next_{req}_{key}_{off_set}"),
-                InlineKeyboardButton(f"📖 {round(int(offset)/10)+1} / {round(total/10)}", callback_data="pages"),
-                InlineKeyboardButton("Nᴇxᴛ 〉", callback_data=f"next_{req}_{key}_{n_offset}")
+                InlineKeyboardButton("☜ Back", callback_data=f"next_{req}_{key}_{off_set}"),
+                InlineKeyboardButton(f"🗓 {round(int(offset)/10)+1} / {round(total/10)}", callback_data="pages"),
+                InlineKeyboardButton("Next ☞", callback_data=f"next_{req}_{key}_{n_offset}")
             ],
         )
     try:
