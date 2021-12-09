@@ -716,10 +716,6 @@ async def advantage_spell_chok(msg):
                     InlineKeyboardButton(
                         "Search In Google", url=f"https://google.com/search?q={query}" # URL
                     )
-                ]
-            ]
-        )
-    
 
 
 
