@@ -54,7 +54,7 @@ async def save_group(bot, message):
             temp.MELCOW['welcome'] = await message.reply(f"<b>Hey , {u.mention}, Welcome to {message.chat.title}\n\n❗️Add your friends & [Share our Group](https://t.me/share/url?url=https://t.me/movies_Hubh2)❗️</b>")
             buttons = [[
                 InlineKeyboardButton('🗣️ Our Group', url='https://t.me/movies_Hubh2'),
-                InlineKeyboardButton('🗣️ Our Group', url='https://t.me/movies_Hubh2')
+                InlineKeyboardButton('MH Updates 📨', url='https://t.me/MoviesHub_Updates')
             ]]
 
 @Client.on_message(filters.command('leave') & filters.user(ADMINS))
