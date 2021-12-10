@@ -53,8 +53,8 @@ async def save_group(bot, message):
                     pass
             temp.MELCOW['welcome'] = await message.reply(f"<b>Hey , {u.mention}, Welcome to {message.chat.title}\n\n❗️Add your friends & [Share our Group](https://t.me/share/url?url=https://t.me/movies_Hubh2)❗️</b>")
         buttons = [[
-            InlineKeyboardButton('ℹ️ Help', url=f"https://t.me/{temp.U_NAME}?start=help"),
-            InlineKeyboardButton('📢 Updates', url='https://t.me/TeamEvamaria')
+            InlineKeyboardButton('🗣️ Our Group', url='https://t.me/movies_Hubh2'),
+            InlineKeyboardButton('MH Updates 📨', url='https://t.me/MoviesHub_Updates')
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
 
