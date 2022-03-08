@@ -17,7 +17,7 @@ async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
         buttons = [
             [
-                InlineKeyboardButton('NEW RELEASE 🍿', url='https://t.me/joinchat/rAWW1iD2NBVhZTc1')
+                InlineKeyboardButton('NEW RELEASE 🍿', url='https://t.me/MH_Newmovie')
             ],
             [
                 InlineKeyboardButton('MH Updates 📨', url=f"https://t.me/MoviesHub_Updates"),
@@ -35,16 +35,16 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-        InlineKeyboardButton('🗣️ Group 1', url='https://t.me/Movies_HubGrp'),
-        InlineKeyboardButton('🗣️ Group 2', url='https://t.me/movies_Hubh2'),
-        InlineKeyboardButton('🗣️ Group 3', url='https://t.me/movies_Hub03')
+        InlineKeyboardButton('🗣️ Group 1', url='https://t.me/MoviesHubGroup2'),
+        InlineKeyboardButton('🗣️ Group 2', url='https://t.me/movies_Hub03'),
+        InlineKeyboardButton('🗣️MH Links', url='https://t.me/MH_Linkz')
     ],[
-        InlineKeyboardButton('🗣 OUR MAIN GROUP ', url='https://t.me/movies_Hubh2')
+        InlineKeyboardButton('🗣 OUR MAIN GROUP ', url='https://t.me/MoviesHubGroup2')
     ],[
-        InlineKeyboardButton('💺 New Release 🍿', url='https://t.me/+rAWW1iD2NBVhZTc1'),
+        InlineKeyboardButton('💺 New Release 🍿', url='https://t.me/MH_Newmovie'),
         InlineKeyboardButton('👥 MH Channel', url='https://t.me/+B94VHKIvaEFmMWE1')
     ],[
-        InlineKeyboardButton('📺 Tv-Web Series', url='https://t.me/MH_Series1'),
+        InlineKeyboardButton('📺 OUR BOTS', url='https://t.me/MH_Linkz'),
         InlineKeyboardButton('MH Updates 📨', url='https://t.me/MoviesHub_Updates')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -80,16 +80,16 @@ async def start(client, message):
         return
     if len(message.command) ==2 and message.command[1] in ["subscribe", "error", "okay"]:
         buttons = [[
-        InlineKeyboardButton('🗣️ Group 1', url='https://t.me/Movies_HubGrp'),
-        InlineKeyboardButton('🗣️ Group 2', url='https://t.me/movies_Hubh2'),
-        InlineKeyboardButton('🗣️ Group 3', url='https://t.me/movies_Hub03')
+        InlineKeyboardButton('🗣️ Group 1', url='https://t.me/MoviesHubGroup2'),
+        InlineKeyboardButton('🗣️ Group 2', url='https://t.me/movies_Hub03'),
+        InlineKeyboardButton('🗣️MH Links', url='https://t.me/MH_Linkz')
     ],[
-        InlineKeyboardButton('🗣 OUR MAIN GROUP ', url='https://t.me/movies_Hubh2')
+        InlineKeyboardButton('🗣 OUR MAIN GROUP ', url='https://t.me/MoviesHubGroup2')
     ],[
-        InlineKeyboardButton('💺 New Release 🍿', url='https://t.me/+rAWW1iD2NBVhZTc1'),
+        InlineKeyboardButton('💺 New Release 🍿', url='https://t.me/MH_Newmovie'),
         InlineKeyboardButton('👥 MH Channel', url='https://t.me/+B94VHKIvaEFmMWE1')
     ],[
-        InlineKeyboardButton('📺 Tv-Web Series', url='https://t.me/MH_Series1'),
+        InlineKeyboardButton('📺 OUR BOTS', url='https://t.me/MH_Linkz'),
         InlineKeyboardButton('MH Updates 📨', url='https://t.me/MoviesHub_Updates')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
