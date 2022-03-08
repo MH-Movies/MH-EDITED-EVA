@@ -413,16 +413,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-        InlineKeyboardButton('🗣️ Group 1', url='https://t.me/Movies_HubGrp'),
-        InlineKeyboardButton('🗣️ Group 2', url='https://t.me/movies_Hubh2'),
-        InlineKeyboardButton('🗣️ Group 3', url='https://t.me/movies_Hub03')
+        InlineKeyboardButton('🗣️ Group 1', url='https://t.me/MoviesHubGroup2'),
+        InlineKeyboardButton('🗣️ Group 2', url='https://t.me/movies_Hub03'),
+        InlineKeyboardButton('🗣️MH Links', url='https://t.me/MH_Linkz')
     ],[
-        InlineKeyboardButton('🗣 OUR MAIN GROUP ', url='https://t.me/movies_Hubh2')
+        InlineKeyboardButton('🗣 OUR MAIN GROUP ', url='https://t.me/MoviesHubGroup2')
     ],[
-        InlineKeyboardButton('💺 New Release 🍿', url='https://t.me/+rAWW1iD2NBVhZTc1'),
-        InlineKeyboardButton('👥 MH Channel', url='https://t.me/+B94VHKIvaEFmMWE1')
+        InlineKeyboardButton('💺 New Release 🍿', url='https://t.me/MH_Newmovie'),
+        InlineKeyboardButton('👥 MH Channel', url='https://t.me/MH_Newmovie')
     ],[
-        InlineKeyboardButton('📺 Tv-Web Series', url='https://t.me/MH_Series1'),
+        InlineKeyboardButton('📺 OUR BOTS', url='https://t.me/MH_Linkz'),
         InlineKeyboardButton('MH Updates 📨', url='https://t.me/MoviesHub_Updates')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -434,12 +434,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "help":
         buttons = [[
             InlineKeyboardButton('🗣️ Our Group', url='https://t.me/movies_Hubh2'),
-            InlineKeyboardButton('🎞 New Releases', url='https://t.me/joinchat/aG4_u8iHx31mNzVl')
+            InlineKeyboardButton('🎞 New Releases', url='https://t.me/MH_Newmovie')
             ],[
-            InlineKeyboardButton('🎭 Movies Hub Channel 📢', url='https://t.me/joinchat/B94VHKIvaEFmMWE1')
+            InlineKeyboardButton('🎭 Movies Hub Channel 📢', url='https://t.me/MoviesHub_Updates')
             ],[
-            InlineKeyboardButton('📺 TV-Series', url='https://t.me/Series_MH'),
-            InlineKeyboardButton('Share 🎗️ Support', url='https://t.me/share/url?url=https://t.me/movies_Hubh2')
+            InlineKeyboardButton('📺 MH LINKS', url='https://t.me/MH_Linkz'),
+            InlineKeyboardButton('Share 🎗️ Support', url='https://t.me/share/url?url=https://t.me/MoviesHub_Updates')
             ],[
             InlineKeyboardButton('🏠 Home', callback_data='start'),
             InlineKeyboardButton('🔮 Status', callback_data='stats')
@@ -452,7 +452,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons= [[
-            InlineKeyboardButton('🤖 Updates', url='https://t.me/EvaMariaUpdates'),
+            InlineKeyboardButton('🤖 Updates', url='https://t.me/MH_Newmovie'),
             InlineKeyboardButton('♥️ Source', callback_data='source')
             ],[
             InlineKeyboardButton('🏠 Home', callback_data='start'),
