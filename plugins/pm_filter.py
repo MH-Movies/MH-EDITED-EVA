@@ -715,7 +715,7 @@ async def advantage_spell_chok(msg):
             movielist += [f"{ko[1]} {splitted[:-1][ko[0] + 1]}"  for ko in enumerate(splitted[:-1]) if ko[0] % 2 == 0]
     SPELL_CHECK[msg.message_id] = movielist
     btn = [[
-                InlineKeyboardButton("❗️ Search In Google ❗️", url=f"https://google.com/search?q={query}")
+                InlineKeyboardButton("🔍 SEARCH IN GOOGLE 🔎", url=f"https://google.com/search?q={query}")
             ] for k, movie in enumerate(movielist)]
     btn.append([InlineKeyboardButton(text="Close", callback_data=f'spolling#{user}#close_spellcheck')])
-    await msg.reply("<b>Couldn't Find This Movie.Try Again ഈ സിനിമയുടെ ഒറിജിനൽ പേര് ഗൂഗിളിൽ പോയി കണ്ടെത്തി അതുപോലെ ഇവിടെ കൊടുക്കുക 🥺</b>", reply_markup=InlineKeyboardMarkup(btn))
+    await msg.reply("<b>➲ 𝖸𝗈𝗎𝗋 𝖱𝖾𝗊𝗎𝖾𝗌𝗍: {query}/br➲ 𝖱𝖾𝗊𝗎𝖾𝗌𝗍𝖾𝖽 𝖻𝗒: {update.from_user.mention} /br➲ Status: #NotFound/br/br/br📝 TO-DO:• Click the SEARCH button and copy paste the movie name that you see.</b>", reply_markup=InlineKeyboardMarkup(btn))
